@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sổ Thu Chi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="ThuChi.css">
+</head>
+<body>
+<u class="fonttitle" style="color: #4c429b"><h1>Quản Lý Chi Tiêu</h1></u>
+<table style="margin-left:auto;margin-right:auto;" >
+    <tr>
+        <td class="toptable" >
+            <table class="boxshadow">
+                <tr>
+                    <th colspan="2" class="fonttable">Nhập Dữ Liệu</th>
+                </tr>
+                <tr class="toptable">
+                    <td>
+                        <label for="Root" class="fontitem"><b>Số Tiền Gốc</b></label>
+                    </td>
+                    <td>
+                        <input autofocus type="number" id="Root" class="inputt">
+                    </td>
+                </tr>
+                <tr class="toptable">
+                    <td>
+                        <label for="Date" class="fontitem"><b>Ngày</b></label>
+                    </td>
+                    <td>
+                        <input type="date" id="Date" class="inputt">
+                    </td>
+                </tr>
+                <tr class="toptable">
+                    <td>
+                        <label for="Money" class="fontitem"><b>Số Tiền</b></label>
+                    </td>
+                    <td>
+                        <input autofocus type="number" id="Money" class="inputt">
+                    </td>
+                </tr>
+                <tr class="toptable">
+                    <td>
+                        <label for="Textarea" class="fontitem"><b>Ghi Chú</b></label>
+                    </td>
+                    <td>
+                        <textarea id="Textarea" rows="4" cols="23" class="inputt"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textmidle">
+                        <button type="button" class="btn btn-success" style="color: white; font-size: 18px" onclick="Root()">Nhập
+                        </button>
+                    </td>
+                    <td class="textmidle">
+                        <button type="button" class="btn btn-danger" style="color: white; font-size: 18px" onclick="minus()">Chi</button>
+                        <button type="button" class="btn btn-info " style="color: white; font-size: 18px" onclick="add()">Thu</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="color: #198754; font-size: 19px;">Số tiền gốc:</th>
+                    <td style="color: #198754; font-size: 19px;">
+                        <u><b id="RsRoot" ></b></u>
+                    </td>
+                <tr>
+                    <th style="color: #4c429b; font-size: 19px;">Số tiền dư:</th>
+                    <td style="color: #4c429b; font-size: 19px;">
+                        <u><b id="RsSurplus" ></b></u>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="textColorMinus">Số lần chi:</th>
+                    <td class="textColorMinus">
+                        <b id="RsClickM"></b>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="textColorMinus">Số tiền chi:</th>
+                    <th id="rsMinus" class="textColorMinus"></th>
+                </tr>
+                <tr>
+                    <th class="textColorAdd">Số lần thu: </th>
+                    <td class="textColorAdd">
+                        <b id="RsClickA"></b>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="textColorAdd">Số tiền thu:</th>
+                    <th id="rsAdd" class="textColorAdd"></th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center" >
+                        <button class="buttonshow" onClick="window.location.href=window.location.href">Reload Page</button>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td class="toptable">
+            <table class="boxshadow">
+                <tr class="textmidle">
+                    <th colspan="2" class="fonttable">Bảng Theo Dõi</th>
+                </tr>
+                <tr class="toptable">
+                    <td>
+                        <table class="table table-borderless" id="tableminus">
+                            <tr>
+                                <th colspan="5" style="text-align: center; color: #DB3142; font-size: 19px">Tiền Chi</th>
+                            </tr>
+                            <tr class="backgrminus">
+                                <th class="textcolortb2">STT</th>
+                                <th class="textcolortb2">Ngày</th>
+                                <th class="textcolortb2">Số tiền</th>
+                                <th class="textcolortb2">Ghi chú</th>
+                                <th class="textcolortb2">Hành động</th>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="table table-borderless" id="tableadd">
+                            <tr>
+                                <th colspan="5" style="text-align: center; color: #0DCAF0; font-size: 19px">Tiền Thu</th>
+                            </tr>
+                            <tr class="backgradd">
+                                <th class="textcolortb2">STT</th>
+                                <th class="textcolortb2">Ngày</th>
+                                <th class="textcolortb2">Số tiền</th>
+                                <th class="textcolortb2">Ghi chú</th>
+                                <th class="textcolortb2">Hành động</th>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<script src="ThuChi.js"></script>
+</body>
+</html>

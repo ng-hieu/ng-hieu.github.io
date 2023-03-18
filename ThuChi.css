@@ -1,0 +1,76 @@
+.text_n_br{
+
+}
+.toptable {
+    vertical-align: top;
+}
+
+.textmidle {
+    text-align: center;
+}
+
+.textcolortb2 {
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.backgrminus {
+    background-color: #DB3142;
+    text-align: center;
+    color: white;
+}
+
+.backgradd {
+    background-color: #0DCAF0;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+.textColorMinus{
+    color: #DB3142;
+    font-size: 19px;
+}
+.textColorAdd{
+    color: #0DCAF0;
+    font-size: 19px;
+}
+.fonttitle{
+    font-family: "#9Slide05 Brannboll Ny";
+}
+.fonttable{
+    font-family: "#9Slide05 Fourth";
+    font-size: 25px;
+    color: #fdfcfc;
+    text-align: center;
+    background: #4c429b;
+}
+.fontitem{
+    color: #4c429b;
+    font-size: 19px;
+}
+.inputt{
+    font-size: 19px;
+}
+body{
+    background-image: url("Studycase.png");
+    background-repeat: no-repeat; /*Tránh lặp ảnh*/
+    background-attachment: fixed; /*Đảm bảo toàn bộ phần tử được bao phủ trong background*/
+    background-size: 100% 100%; /*Giúp hình ảnh bao phủ toàn bộ phần tử*/
+}
+.boxshadow{
+    border: 2px double #4c429b;
+    box-shadow: 6px 6px #cec8ef;
+    background-color: white;
+}
+.buttonshow{
+    border: 2px double #4c429b;
+    background-color: #4c429b;
+    color:white;
+    font-size: 17px;
+    font-family: "#9Slide03 Encode SeEx ExLight";
+}
